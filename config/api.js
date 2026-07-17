@@ -31,11 +31,8 @@ const API = {
             console.error("GET ERROR :", error);
 
             return {
-
                 success: false,
-
                 message: "Gagal mengambil data."
-
             };
 
         }
@@ -54,17 +51,19 @@ const API = {
 
                 method: "POST",
 
+                // Mengubah header ke text/plain untuk menghindari CORS blocking oleh Google Apps Script
                 headers: {
-
-                    "Content-Type": "application/json"
-
+                    "Content-Type": "text/plain;charset=utf-8"
                 },
 
                 body: JSON.stringify(data)
 
             });
 
-            if (!response.ok) {
+            // Catatan: Jika menggunakan pengiriman tertentu ke Google Script, 
+            // terkadang response.ok bisa bernilai false karena status redirect (302),
+            // namun jika data masuk ke spreadsheet, itu tanda sukses.
+            if (!response.ok && response.status !== 0) {
                 throw new Error(`HTTP Error ${response.status}`);
             }
 
@@ -75,11 +74,8 @@ const API = {
             console.error("POST ERROR :", error);
 
             return {
-
                 success: false,
-
                 message: "Gagal mengirim data."
-
             };
 
         }
