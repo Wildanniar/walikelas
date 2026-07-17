@@ -2,7 +2,7 @@
 // Google Apps Script URL
 // ======================================================
 
-const BASE_URL = "https://script.google.com/macros/s/AKfycbxA-lgSTCHUXZ604UXOOxs65AlsNfeTor2AgEqWbVneQRWpDk8Tp4en0n4SX2a0bpfy/exec?action=siswa";
+const BASE_URL = "https://script.google.com/macros/s/AKfycbxA-lgSTCHUXZ604UXOOxs65AlsNfeTor2AgEqWbVneQRWpDk8Tp4en0n4SX2a0bpfy/exec";
 
 
 // ======================================================
