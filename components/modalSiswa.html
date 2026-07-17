@@ -1,0 +1,126 @@
+<div class="modal fade" id="modalSiswa">
+
+    <div class="modal-dialog modal-lg">
+
+        <div class="modal-content">
+
+            <div class="modal-header">
+
+                <button class="btn btn-primary" onclick="tambahBaru()">
+                    Tambah Data Siswa
+                </button>
+
+                <button class="close" data-dismiss="modal">
+                    <span>&times;</span>
+                </button>
+
+            </div>
+
+            <div class="modal-body">
+
+                <input type="hidden" id="id">
+
+                <div class="form-row">
+
+                    <div class="form-group col-md-6">
+
+                        <label>NIS</label>
+
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="nis">
+
+                    </div>
+
+                    <div class="form-group col-md-6">
+
+                        <label>Nama</label>
+
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="nama">
+
+                    </div>
+
+                </div>
+
+                <div class="form-row">
+
+                    <div class="form-group col-md-4">
+
+                        <label>Jenis Kelamin</label>
+
+                        <select
+                            class="form-control"
+                            id="jk">
+
+                            <option value="L">Laki-laki</option>
+
+                            <option value="P">Perempuan</option>
+
+                        </select>
+
+                    </div>
+
+                    <div class="form-group col-md-4">
+
+                        <label>Kelas</label>
+
+                        <input
+                            class="form-control"
+                            id="kelas">
+
+                    </div>
+
+                    <div class="form-group col-md-4">
+
+                        <label>No HP</label>
+
+                        <input
+                            class="form-control"
+                            id="no_hp">
+
+                    </div>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>Alamat</label>
+
+                    <textarea
+                        class="form-control"
+                        id="alamat"
+                        rows="3"></textarea>
+
+                </div>
+
+            </div>
+
+            <div class="modal-footer">
+
+                <button
+                    class="btn btn-secondary"
+                    data-dismiss="modal">
+
+                    Batal
+
+                </button>
+
+                <button
+                    class="btn btn-primary"
+                    id="btnSimpan">
+
+                    Simpan
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
